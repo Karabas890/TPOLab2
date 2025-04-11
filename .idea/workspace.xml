@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8baf478d-7075-47b5-92f5-5f801fd67028" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FunctionViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logarifm/Ln.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Cos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Cot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Csc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Sec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Sin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Tan.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2vYclhipgi2qHGawmWNXfoM9GPb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8baf478d-7075-47b5-92f5-5f801fd67028" name="Changes" comment="" />
+      <created>1744325602653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744325602653</updated>
+      <workItem from="1744325604003" duration="6259000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
