@@ -1,16 +1,19 @@
+package mainFunction;
+
 import logarifm.*;
 import trigonometry.*;
 
 public class Function {
-    public static double f(double x) {
+    public static double f(double x,double epsilon) {
+        epsilon /= 2;
         if (x <= 0) {
 
-            double sin = Sin.sin(x);
-            double cos = Cos.cos(x);
-            double tan = Tan.tan(x);
-            double cot = Cot.cot(x);
-            double sec = Sec.sec(x);
-            double csc = Csc.csc(x);
+            double sin = Sin.sin(x,epsilon);
+            double cos = Cos.cos(x,epsilon);
+            double tan = Tan.tan(x,epsilon);
+            double cot = Cot.cot(x,epsilon);
+            double sec = Sec.sec(x,epsilon);
+            double csc = Csc.csc(x,epsilon);
 
             double part1 = (((tan + cos) + tan) / (sec - sin)) * sec;
             double part2 = (part1 + tan + cot) * tan * (sin / csc);
@@ -51,10 +54,10 @@ public class Function {
             return (((((((part3 - part4) / part5) + part6) * part7) * part8) / part10) * part11)
                     * (part14 - part15);
         } else {
-            double log2 = Log_2.log_2(x);
-            double log3 = Log_3.log_3(x); // Not used here, but maybe useful later
-            double log5 = Log_5.log_5(x);
-            double log10 = Log_10.log_10(x);
+            double log2 = Log_2.log_2(x,epsilon);
+            double log3 = Log_3.log_3(x,epsilon); // Not used here, but maybe useful later
+            double log5 = Log_5.log_5(x,epsilon);
+            double log10 = Log_10.log_10(x,epsilon);
 
             return ((((log10 + log2) * log2) + log10) + Math.pow(log5, 2)) * log5;
         }

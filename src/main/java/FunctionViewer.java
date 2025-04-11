@@ -1,4 +1,3 @@
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.io.File;
@@ -6,6 +5,7 @@ import java.io.IOException;
 
 import javax.swing.SwingUtilities;
 
+import mainFunction.Function;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.ChartUtils;
@@ -17,10 +17,10 @@ import org.jfree.data.xy.XYSeriesCollection;
 import logarifm.*;
 import trigonometry.*;
 
-
 public class FunctionViewer {
 
-    private static String path = "/Users/basti/Desktop/Functions"; // Путь к папке с графиками
+    private static final String path = "/Users/basti/Desktop/Functions"; // Путь к папке с графиками
+    private static final double EPSILON = 1e-6; // Значение погрешности
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -40,17 +40,17 @@ public class FunctionViewer {
         });
     }
 
-    private static void createAndShowChart(String title, MathFunction function, boolean limitY, String imgDirPath) {
+    private static void createAndShowChart(String title, MathFunctionWithEpsilon function, boolean limitY, String imgDirPath) {
         XYSeries series = new XYSeries(title);
 
         double yLimit = 50;
-        double start = -8.0;
-        double end = 8;
-        double step = 0.0011;
+        double start = -10.0;
+        double end = 10.0;
+        double step = 0.1;
 
         for (double x = start; x <= end; x += step) {
             try {
-                double y = function.apply(x);
+                double y = function.apply(x, EPSILON);
                 if (Double.isFinite(y)) {
                     if (limitY) {
                         if (y > yLimit) y = yLimit;
@@ -59,6 +59,7 @@ public class FunctionViewer {
                     series.add(x, y);
                 }
             } catch (Exception ignored) {
+                // Пропускаем точки, где функция не определена
             }
         }
 
@@ -103,7 +104,7 @@ public class FunctionViewer {
     }
 
     @FunctionalInterface
-    public interface MathFunction {
-        double apply(double x);
+    public interface MathFunctionWithEpsilon {
+        double apply(double x, double epsilon);
     }
 }

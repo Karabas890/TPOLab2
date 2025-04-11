@@ -1,26 +1,30 @@
 package trigonometry;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class Sin {
-    public static double sin(double x) {
-        x = x % (2 * Math.PI);
+
+    /**
+     * Вычисление синуса с заданной точностью (погрешностью) epsilon.
+     *
+     * @param x       входное значение (в радианах)
+     * @param epsilon допустимая погрешность (например, 1e-5)
+     * @return значение sin(x) с точностью до epsilon
+     */
+    public static double sin(double x, double epsilon) {
+        epsilon /= 2;
+        x = x % (2 * Math.PI);  // Нормализация значения x
 
         double result = 0;
         double term = x;
         int n = 1;
 
-        for (int i = 0; i < 1000; i++) {
+        int iterations = 0;
+        while (Math.abs(term) >= epsilon && iterations < 1000) {
             result += term;
             term *= -x * x / ((2 * n) * (2 * n + 1));
             n++;
+            iterations++;
         }
 
-        BigDecimal bd = new BigDecimal(result).setScale(5, RoundingMode.HALF_UP); // Указываем количество знаков после запятой
         return result;
-        //return bd.doubleValue();
     }
-
-
 }

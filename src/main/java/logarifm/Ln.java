@@ -1,25 +1,31 @@
 package logarifm;
 
 public class Ln {
-    public static double ln(double x) {
+    public static double ln(double x, double epsilon) {
+        epsilon /= 2;
         if (x <= 0) {
-            throw new IllegalArgumentException("x должно быть положительным");
+            throw new IllegalArgumentException("ln неопределен для этого x = " + x);
         }
-
-        if (x == 1) {
+        if (x == 1.0) {
             return 0.0;
         }
 
-        double result = 0.0;
-        double term = (x - 1) / (x + 1);
-        double termSquared = term * term;
-        double power = term;
+        double t = (x - 1) / (x + 1);
+        double tSquared = t * t;
+        double factor = 1 - tSquared;
+        double term = t;
+        double sum = term;
+        int n = 1;
 
-        for (int n = 1; n < 100; n += 2) {
-            result += power / n;
-            power *= termSquared;
+        while (true) {
+            term *= tSquared * (2 * n - 1) / (2 * n + 1);
+            if (Math.abs(term) < epsilon * factor) {
+                break;
+            }
+            sum += term;
+            n++;
         }
 
-        return 2 * result;
+        return 2 * sum;
     }
 }

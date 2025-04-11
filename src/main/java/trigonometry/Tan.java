@@ -7,10 +7,10 @@ import static trigonometry.Cos.cos;
 
 
 public class Tan {
-    public static double tan(double x) {
-        if (cos(x) == 0) throw new IllegalArgumentException("Функция не существует в точке x=" + x);
-        BigDecimal bd = BigDecimal.valueOf(Sin.sin(Sin.sin(x) / cos(x))).setScale(5, RoundingMode.HALF_UP);
+    public static double tan(double x,double epsilon) {
+        if (cos(x,epsilon) == 0) throw new IllegalArgumentException("Функция не существует в точке x=" + x);
+        BigDecimal bd = BigDecimal.valueOf(Sin.sin(Sin.sin(x,epsilon) / cos(x,epsilon),epsilon)).setScale(5, RoundingMode.HALF_UP);
         //return bd.doubleValue();
-        return (Sin.sin(x) / cos(x));
+        return (Sin.sin(x,epsilon) / cos(x,epsilon));
     }
 }
