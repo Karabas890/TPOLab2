@@ -5,37 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8baf478d-7075-47b5-92f5-5f801fd67028" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CsvExporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/functionTest/FunctionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logarifm/LnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logarifm/Log_10Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logarifm/Log_2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logarifm/Log_3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logarifm/Log_5Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/CosTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/CotTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/CscTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/SecTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/SinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/trigonometry/TanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DrawGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainFunction/Function.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FunctionViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FunctionViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Csc_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Csc_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sec_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Sec_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cos_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cos_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cot_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cot_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/f_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ln_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ln_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log10_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log10_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log2_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log3_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log5_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sin_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sin_output.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logarifm/Ln.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logarifm/Ln.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logarifm/Log_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logarifm/Log_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logarifm/Log_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logarifm/Log_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logarifm/Log_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Cos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Cos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Cot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Cot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Csc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Csc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Sec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Sec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Sin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Sin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trigonometry/Tan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trigonometry/Tan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionTest/FunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionTest/FunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tan_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tan_output.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/basti/IdeaProjects/YandexTest",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="trigonometry" />
@@ -138,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in softwareTestingLab2" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FunctionTest" />
         <item itemvalue="JUnit.Log_10Test" />
         <item itemvalue="JUnit.Log_5Test" />
@@ -155,7 +141,8 @@
       <option name="presentableId" value="Default" />
       <updated>1744325602653</updated>
       <workItem from="1744325604003" duration="7696000" />
-      <workItem from="1744369193953" duration="19002000" />
+      <workItem from="1744369193953" duration="19258000" />
+      <workItem from="1745590241835" duration="8786000" />
     </task>
     <servers />
   </component>
@@ -174,6 +161,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/softwareTestingLab2$All_in_softwareTestingLab2.ic" NAME="All in softwareTestingLab2 Coverage Results" MODIFIED="1744396291618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/softwareTestingLab2$All_in_softwareTestingLab2.ic" NAME="All in softwareTestingLab2 Coverage Results" MODIFIED="1745601352394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

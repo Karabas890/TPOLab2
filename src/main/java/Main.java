@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         double start = -10;
         double end = 10;
-        double step = 0.1;
+        double step = 0.001;
         double epsilon = 1e-6;
         String separator = ";";
 

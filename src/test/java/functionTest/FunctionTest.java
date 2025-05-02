@@ -3,6 +3,8 @@ package functionTest;
 import mainFunction.Function;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
@@ -136,4 +138,56 @@ class FunctionTest {
         double result = function.f(x, epsilon);
         assertEquals(0.0, result, epsilon);
     }
+    @ParameterizedTest
+    @CsvSource({
+            // Точки экстремума (x, expected)
+            "0.910667, 0.00079",
+            "-2.33393, -78.13395",
+            "-2.375845, -177.0974",
+            "-2.387424, -247.420228",
+            "-3.88275, -26.4707125",
+            "-3.89678, -16.985002",
+            "-3.90529, -13.32978",
+            "-5.47485, -13.29393",
+
+    })
+    void testExtremumPoints(double x, double expected) {
+        double epsilon = 1e-5;
+        double testEpsilon = 1e-3;
+        if (x > 0) {
+            // Мокаем логарифмические функции для положительных x
+            try (MockedStatic<Ln> lnMock = mockStatic(Ln.class);
+                 MockedStatic<Log_2> log2Mock = mockStatic(Log_2.class);
+                 MockedStatic<Log_5> log5Mock = mockStatic(Log_5.class);
+                 MockedStatic<Log_10> log10Mock = mockStatic(Log_10.class)) {
+
+                lnMock.when(() -> Ln.ln(x, epsilon)).thenReturn(Math.log(x));
+                log2Mock.when(() -> Log_2.log_2(x, epsilon)).thenReturn(Math.log(x)/Math.log(2));
+                log5Mock.when(() -> Log_5.log_5(x, epsilon)).thenReturn(Math.log(x)/Math.log(5));
+                log10Mock.when(() -> Log_10.log_10(x, epsilon)).thenReturn(Math.log10(x));
+            }
+        } else {
+            // Мокаем тригонометрические функции для отрицательных x
+            try (MockedStatic<Sin> sinMock = mockStatic(Sin.class);
+                 MockedStatic<Cos> cosMock = mockStatic(Cos.class);
+                 MockedStatic<Tan> tanMock = mockStatic(Tan.class);
+                 MockedStatic<Cot> cotMock = mockStatic(Cot.class);
+                 MockedStatic<Sec> secMock = mockStatic(Sec.class);
+                 MockedStatic<Csc> cscMock = mockStatic(Csc.class)) {
+
+                sinMock.when(() -> Sin.sin(x, epsilon)).thenReturn(Math.sin(x));
+                cosMock.when(() -> Cos.cos(x, epsilon)).thenReturn(Math.cos(x));
+                tanMock.when(() -> Tan.tan(x, epsilon)).thenReturn(Math.tan(x));
+                cotMock.when(() -> Cot.cot(x, epsilon)).thenReturn(1.0/Math.tan(x));
+                secMock.when(() -> Sec.sec(x, epsilon)).thenReturn(1.0/Math.cos(x));
+                cscMock.when(() -> Csc.csc(x, epsilon)).thenReturn(1.0/Math.sin(x));
+            }
+        }
+
+        double result = function.f(x, epsilon);
+        assertEquals(expected, result, testEpsilon,
+                String.format("Failed at x = %.5f", x));
+    }
+
+
 }
